@@ -1,0 +1,7 @@
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\obj\Debug\Basis Programmering, første semester.csproj.AssemblyReference.cache
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\obj\Debug\Basis Programmering, første semester.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\bin\Debug\Basis Programmering, første semester.exe.config
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\bin\Debug\Basis Programmering, første semester.exe
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\bin\Debug\Basis Programmering, første semester.pdb
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\obj\Debug\Basis Programmering, første semester.exe
+C:\Users\Bruger\Desktop\C#\Basis Programmering\Basis Programmering, første semester\Basis Programmering, første semester\obj\Debug\Basis Programmering, første semester.pdb
