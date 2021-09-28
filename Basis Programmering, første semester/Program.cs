@@ -6,7 +6,7 @@ namespace Basis_Programmering__første_semester
     {
 
 
-
+        
 
         static void Main(string[] args)
         {
@@ -28,8 +28,8 @@ namespace Basis_Programmering__første_semester
 
         static void Loopd()
         {
-            int[,] myArrayd = new int[1, 5];
-
+           
+            string[] dwa = new string[] { "   ", "Generel viden", "    Geografi", "       Sprog", "        Historie", "       Musik" };
 
 
             for (int y = 0; y < 1; y++)
@@ -43,9 +43,10 @@ namespace Basis_Programmering__første_semester
                     {
                         Console.Write("");
                     }
-                    Console.Write("       |   " + myArrayd.GetLength(myArrayd[y, x]) + "     |");
-                }
 
+                }
+                    foreach(var d in dwa)
+                    Console.Write("  " + (d) + " ");
                 Console.WriteLine("");
 
 
@@ -55,7 +56,7 @@ namespace Basis_Programmering__første_semester
 
         static void Velkommen()
         {
-            string[] myArray = new string[] { " Velkommen til Jeopardy ", " Quizmasteren placerer spillepladen med jetonerne foran sig og opstiller 6 svar/spørgsmålskort i kortholderen.      ", " Quizmasteren placerer spillepladen med jetonerne foran sig og opstiller 6 svar/spørgsmålskort i kortholderen.      ", " og kategorien vender ud mod deltagerne.       ", " Deltagerne i spillet må naturligvis ikke kunne se spørgsmål/svar-siden af kortene.       ", " Klik E for at starte " };
+            string[] myArray = new string[] { " Velkommen til Jeopardy ", " Quizmasteren placerer spillepladen med jetonerne foran sig og opstiller 6 svar/spørgsmålskort i kortholderen.      ", " Disse placeres, så spørgsmålssiden vender ind mod quizmasteren, og kategorien vender ud mod deltagerne.      ", " og kategorien vender ud mod deltagerne.       ", " Deltagerne i spillet må naturligvis ikke kunne se spørgsmål/svar-siden af kortene.       ", " Klik E for at starte " };
             string arrayStrig = myArray[0];
             string kategori = myArray[1];
             string arrayStri = myArray[2];
@@ -63,14 +64,17 @@ namespace Basis_Programmering__første_semester
             string d = myArray[4];
             string S = myArray[5];
 
+            string tolo = arrayStrig.ToUpper();
+
             Console.WriteLine();
-            Console.WriteLine(arrayStrig);
+            Console.WriteLine(tolo);
             Console.WriteLine("");
 
             Console.WriteLine(kategori);
             Console.WriteLine(arrayStri);
             Console.WriteLine(kategor);
             Console.WriteLine(d);
+            Console.WriteLine();
             Console.WriteLine(S);
             Console.WriteLine();
         }
@@ -80,10 +84,15 @@ namespace Basis_Programmering__første_semester
         {
 
             Velkommen();
+            
             while (Console.ReadKey().Key != ConsoleKey.E)
             {
             }
-            Console.Clear();
+           
+
+            Console.Clear(); 
+
+
             h1();
             Category();
 
@@ -138,10 +147,13 @@ namespace Basis_Programmering__første_semester
 
 
 
-            string[] myArray = new string[] { " Skriv kategorienavn", "Skriv din kategori igen", "3", "4", "5", "6", "7", "8", "9", "10" };
+            string[] myArray = new string[] { " Skriv kategorienavn", " Skriv din kategori igen", " Du har været her før du prøver at snyde", " Skriv Hvilken sværhedsgrad", " Hvor mange tidszoner er der I Rusland?", " Skriv dit svar her" };
             string arrayStrig = myArray[0];
             string kategori = myArray[1];
-
+            string snyde = myArray[2];
+            string Hvilken = myArray[3];
+                string tidsZoner = myArray[4];
+            string svar = myArray[5];
 
             //pointsystemet
             int[] myArrayd = new int[] { 99, 299, 499, 699, 899 };
@@ -163,7 +175,7 @@ namespace Basis_Programmering__første_semester
             Console.WriteLine();
             Console.WriteLine(tolo);
 
-            //Selector
+            //Selector den bliver brugt men den er gravet ud på grund af at den først bliver brugt når den kører
             string selector = "";
 
 
@@ -179,8 +191,22 @@ namespace Basis_Programmering__første_semester
             bool dwadaw = true;
             bool dawdadaw = true;
 
+            ///Sprog
+            bool ddddasddadsa = true;
+            bool dwadwadwadwawd = true;
+            bool dadwawdawddw = true;
+            bool dwadwadadwawdwa = true;
+            bool dddddddd = true;
+
+            //Historie
 
 
+            //Musik
+            bool liverpool = true;
+            bool mange = true;
+            bool album = true;
+            bool streamede = true;
+            bool angeles = true;
 
             // restart som der er stavet forkert
             bool restaet = false;
@@ -197,7 +223,7 @@ namespace Basis_Programmering__første_semester
 
                 restaet = false;
 
-                string[] dwa = new string[] { " Generel viden", "Geografi", "Sprog, litteratur og kunst:", "Historie og mode", "Popkultur og musik" };
+                
 
 
                 selector = (Console.ReadLine());
@@ -205,35 +231,35 @@ namespace Basis_Programmering__første_semester
                 if (selector == "Generel viden")
                 {
                     int selectorSvorhedsGrad;
-                    Console.WriteLine(" Skriv Hvilken sværhedsgrad");
+                    Console.WriteLine(Hvilken);
 
                     selectorSvorhedsGrad = int.Parse((Console.ReadLine()));
 
                     if (tenker == false)
                     {
 
-                        Console.WriteLine(" du har været her før du prøver at snyde");
+                        Console.WriteLine(snyde);
                     }
 
                     if (tenkerd == false)
                     {
 
-                        Console.WriteLine(" du har været her før du prøver at snyde");
+                        Console.WriteLine(snyde);
                     }
                     if (tenker2 == false)
                     {
 
-                        Console.WriteLine(" du har været her før du prøver at snyde");
+                        Console.WriteLine(snyde);
                     }
                     if (dawdwadw == false)
                     {
 
-                        Console.WriteLine(" du har været her før du prøver at snyde");
+                        Console.WriteLine(snyde);
                     }
                     if (dddda == false)
                     {
 
-                        Console.WriteLine(" du har været her før du prøver at snyde");
+                        Console.WriteLine(snyde);
                     }
 
 
@@ -241,9 +267,9 @@ namespace Basis_Programmering__første_semester
                     {
                         if (selectorSvorhedsGrad == 100)
                         {
-                            Console.WriteLine(" Hvor mange tidszoner er der I Rusland?");
+                            Console.WriteLine(tidsZoner);
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her");
+                            Console.WriteLine(svar);
                             Console.WriteLine("");
                             string rusLand;
 
@@ -255,7 +281,7 @@ namespace Basis_Programmering__første_semester
                             {
 
                                 Console.WriteLine(" Tillykke du har vundet 100 point");
-                                
+
                                 tenker = false;
 
                                 if (tenker == false)
@@ -287,7 +313,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvad er Japans nationalblomst? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
 
                             string nationalBlomst;
 
@@ -328,7 +354,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvor mange striber er der på det amerikanske flag? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string amerikanske;
 
                             amerikanske = (Console.ReadLine());
@@ -367,7 +393,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvad er Australiens nationaldyr? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string nationalDyr;
 
                             nationalDyr = (Console.ReadLine());
@@ -408,7 +434,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvor mange dage tager det for jorden at dreje rundt om solen? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string S;
 
                             S = (Console.ReadLine());
@@ -446,6 +472,657 @@ namespace Basis_Programmering__første_semester
 
                 }
 
+
+                ////Musik
+                if (selector == "Musik")
+                {
+                    int selectorSvorhedsGrad;
+                    Console.WriteLine(" Skriv Hvilken sværhedsgrad");
+                    selectorSvorhedsGrad = int.Parse((Console.ReadLine()));
+
+                    if (angeles == false)
+                    {
+                        Console.WriteLine(" du har været her før du prøver at snyde");
+                    }
+
+                    if (angeles == true)
+                    {
+                        if (selectorSvorhedsGrad == 100)
+                        {
+                            Console.WriteLine(" Hvor er Billie Eilish fra?");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string verden;
+                            verden = (Console.ReadLine());
+
+
+
+                            if (verden == "Los Angeles" || verden == "los angeles")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                angeles = false;
+
+                                if (angeles == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem1;
+                                        ++score;
+                                    } while (angeles);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+                    
+                    if (liverpool == true)
+                    {
+                        if (selectorSvorhedsGrad == 300)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvilken by kommer The Beatles fra? ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string vatikanstaten;
+
+                            vatikanstaten = (Console.ReadLine());
+
+
+
+                            if (vatikanstaten == "Liverpool" || vatikanstaten == "liverpool")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                liverpool = false;
+
+
+                                if (liverpool == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem3;
+                                        ++score;
+                                    } while (liverpool);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+                   
+                    if (streamede == true)
+                    {
+                        if (selectorSvorhedsGrad == 500)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvad er dem mest streamede sang på Spotify ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string amerikanske;
+
+                            amerikanske = (Console.ReadLine());
+
+
+
+                            if (amerikanske == "Ed Sheeran" || amerikanske == "The Shape of You")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                streamede = false;
+
+                                if (streamede == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem5;
+                                        ++score;
+                                    } while (streamede);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    
+                    if (album == true)
+                    {
+                        if (selectorSvorhedsGrad == 700)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvad var det mest streamede album på Spotify i 2019 ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string skriget;
+
+                            skriget = (Console.ReadLine());
+
+
+
+                            if (skriget == "When We Fall Asleep, Where Do We Go? Billie Eilish")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                album = false;
+                                if (album == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem7;
+                                        ++score;
+                                    } while (album);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    
+                    else if (mange == true)
+                    {
+                        if (selectorSvorhedsGrad == 900)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvor mange tangenter har et klassisk klaver?");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string michelangelo;
+
+                            michelangelo = (Console.ReadLine());
+
+
+
+                            if (michelangelo == "88")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                mange = false;
+
+                                if (mange == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem9;
+                                        ++score;
+                                    } while (ddddasddadsa);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    restaet = true;
+
+                }
+
+                if (selector == "Historie")
+                {
+                    int selectorSvorhedsGrad;
+                    Console.WriteLine(" Skriv Hvilken sværhedsgrad");
+                    selectorSvorhedsGrad = int.Parse((Console.ReadLine()));
+
+                    if (dwadwadwadwawd == false)
+                    {
+                        Console.WriteLine(" du har været her før du prøver at snyde");
+                    }
+
+                    if (dwadwadwadwawd == true)
+                    {
+                        if (selectorSvorhedsGrad == 100)
+                        {
+                            Console.WriteLine(" Hvornår åbnede undergrundbanen i London?");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string verden;
+                            verden = (Console.ReadLine());
+
+
+
+                            if (verden == "1863")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                dwadwadwadwawd = false;
+
+                                if (dwadwadwadwawd == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem1;
+                                        ++score;
+                                    } while (dwadwadwadwawd);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    if (dadwawdawddw == true)
+                    {
+                        if (selectorSvorhedsGrad == 300)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvem opfandt internettet, og hvornår? ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string vatikanstaten;
+
+                            vatikanstaten = (Console.ReadLine());
+
+
+
+                            if (vatikanstaten == "tim Berners-Lee" || vatikanstaten == "1990")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                dadwawdawddw = false;
+
+
+                                if (dadwawdawddw == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem3;
+                                        ++score;
+                                    } while (dadwawdawddw);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    if (dwadwadadwawdwa == true)
+                    {
+                        if (selectorSvorhedsGrad == 500)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvem opfandt den ikoniske ”lille sorte kjole” ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string amerikanske;
+
+                            amerikanske = (Console.ReadLine());
+
+
+
+                            if (amerikanske == "Coco Chanel" || amerikanske == "1920")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                dwadwadadwawdwa = false;
+
+                                if (dwadwadadwawdwa == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem5;
+                                        ++score;
+                                    } while (dwadwadadwawdwa);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+
+                    if (dddddddd == true)
+                    {
+                        if (selectorSvorhedsGrad == 700)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvad skete der d. 20 Juli 1969 ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string skriget;
+
+                            skriget = (Console.ReadLine());
+
+
+
+                            if (skriget == "Apollo 11 landede på månen")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                dddddddd = false;
+                                if (dddddddd == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem7;
+                                        ++score;
+                                    } while (dddddddd);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+
+                    else if (ddddasddadsa == true)
+                    {
+                        if (selectorSvorhedsGrad == 900)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvornår blev Vogue udgivet for første gang 1892, 1960, 2000?");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string michelangelo;
+
+                            michelangelo = (Console.ReadLine());
+
+
+
+                            if (michelangelo == "1892")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                ddddasddadsa = false;
+
+                                if (ddddasddadsa == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem9;
+                                        ++score;
+                                    } while (ddddasddadsa);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    restaet = true;
+
+                }
+
+
+
+                ///---------------
+                if (selector == "Sprog")
+                {
+                    int selectorSvorhedsGrad;
+                    Console.WriteLine(" Skriv Hvilken sværhedsgrad");
+                    selectorSvorhedsGrad = int.Parse((Console.ReadLine()));
+
+                    if (dwadwadwadwawd == false)
+                    {
+                        Console.WriteLine(" du har været her før du prøver at snyde");
+                    }
+
+                    if (dwadwadwadwawd == true)
+                    {
+                        if (selectorSvorhedsGrad == 100)
+                        {
+                            Console.WriteLine(" Hvad er slang navnet for New York som de lokale bruger?");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string verden;
+                            verden = (Console.ReadLine());
+
+
+
+                            if (verden == "Gotham" || verden == "gotham")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                dwadwadwadwawd = false;
+
+                                if (dwadwadwadwawd == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem1;
+                                        ++score;
+                                    } while (dwadwadwadwawd);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+                    
+                    if (dadwawdawddw == true)
+                    {
+                        if (selectorSvorhedsGrad == 300)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvilken bogserie solgte mest i det 21ende århundrede? ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string vatikanstaten;
+
+                            vatikanstaten = (Console.ReadLine());
+
+
+
+                            if (vatikanstaten == "Harry Potter" || vatikanstaten == "J. K. Rowling")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                dadwawdawddw = false;
+
+
+                                if (dadwawdawddw == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem3;
+                                        ++score;
+                                    } while (dadwawdawddw);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+                    
+                    if (dwadwadadwawdwa == true)
+                    {
+                        if (selectorSvorhedsGrad == 500)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvilken kendt grafitti kunstner kommer fra Bristol? ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string amerikanske;
+
+                            amerikanske = (Console.ReadLine());
+
+
+
+                            if (amerikanske == "Banksy" || amerikanske == "banksy")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                dwadwadadwawdwa = false;
+
+                                if (dwadwadadwawdwa == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem5;
+                                        ++score;
+                                    } while (dwadwadadwawdwa);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    
+                    if (dddddddd == true)
+                    {
+                        if (selectorSvorhedsGrad == 700)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Den norske kunstner Edvard Munch er kendt for at male hvilket ikonisk maleri? ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string skriget;
+
+                            skriget = (Console.ReadLine());
+
+
+
+                            if (skriget == "Skriget" || skriget == "Skriget")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                dddddddd = false;
+                                if (dddddddd == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem7;
+                                        ++score;
+                                    } while (dddddddd);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    
+                    else if (ddddasddadsa == true)
+                    {
+                        if (selectorSvorhedsGrad == 900)
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine(" Hvilken kunstner malede loftet i Det Sixtinske Kapel i Rom? ");
+                            Console.WriteLine("");
+                            Console.WriteLine(svar);
+                            string michelangelo;
+
+                            michelangelo = (Console.ReadLine());
+
+
+
+                            if (michelangelo == "Michelangelo" || michelangelo == "michelangelo")
+                            {
+
+                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                ddddasddadsa = false;
+
+                                if (ddddasddadsa == false)
+                                {
+                                    do
+                                    {
+                                        score += pointSystem9;
+                                        ++score;
+                                    } while (ddddasddadsa);
+                                }
+                                Console.WriteLine();
+                                Console.WriteLine(" score: " + score);
+                                Console.WriteLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine(" Svaret er ikke korrekt");
+
+                            }
+                        }
+                    }
+
+                    restaet = true;
+
+                }
+               // --------
+
                 if (selector == "Geografi")
                 {
                     int selectorSvorhedsGrad;
@@ -463,7 +1140,7 @@ namespace Basis_Programmering__første_semester
                         {
                             Console.WriteLine(" Hvilket land i verden har flest øer?");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her");
+                            Console.WriteLine(svar);
                             string verden;
                             verden = (Console.ReadLine());
 
@@ -502,7 +1179,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvad er det mindste land i verden? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string vatikanstaten;
 
                             vatikanstaten = (Console.ReadLine());
@@ -543,7 +1220,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvad er Canadas hovedstad? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string amerikanske;
 
                             amerikanske = (Console.ReadLine());
@@ -584,7 +1261,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvor er det laveste naturlige sted på jorden? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string nationalDyr;
 
                             nationalDyr = (Console.ReadLine());
@@ -624,7 +1301,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("");
                             Console.WriteLine(" Hvor mange dage tager det for jorden at dreje rundt om solen? ");
                             Console.WriteLine("");
-                            Console.WriteLine(" Skriv dit svar her ");
+                            Console.WriteLine(svar);
                             string rusLand;
 
                             rusLand = (Console.ReadLine());
@@ -656,15 +1333,15 @@ namespace Basis_Programmering__første_semester
                             }
                         }
                     }
-                    else
-                    {
-                        restaet = true;
-                    }
+               
+                        
+                    
                 }
 
-                Console.WriteLine("");
-                Console.WriteLine(" hvis du trykker enter to gange så stopper den spillet og viser din fulde score");
-                Console.WriteLine("");
+
+             
+
+                restaet = true;
             } while (restaet);
 
             Console.WriteLine(" Så din total score er: " + score);
@@ -678,13 +1355,13 @@ namespace Basis_Programmering__første_semester
 
 
 
-            string s = "==============" + " Jeopardy " + "==============";
+            string s = "   ==============" + " Jeopardy " + "==============";
 
 
 
             string toUpper = s.ToUpper();
 
-            Console.SetCursorPosition((Console.WindowWidth - toUpper.Length) / 4, Console.CursorTop + 2);
+            Console.SetCursorPosition((Console.WindowWidth - toUpper.Length) / 3, Console.CursorTop + 2);
 
 
 
