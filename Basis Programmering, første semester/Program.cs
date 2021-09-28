@@ -188,35 +188,35 @@ namespace Basis_Programmering__første_semester
                 if (selector == "Generel viden")
                 {
                     int selectorSvorhedsGrad;
-                    Console.WriteLine("Skriv Hvilken sværhedsgrad");
+                    Console.WriteLine(" Skriv Hvilken sværhedsgrad");
 
                     selectorSvorhedsGrad = int.Parse((Console.ReadLine()));
 
                     if (tenker == false)
                     {
 
-                        Console.WriteLine("du har været her før du prøver at snyde");
+                        Console.WriteLine(" du har været her før du prøver at snyde");
                     }
 
                     if (tenkerd == false)
                     {
 
-                        Console.WriteLine("du har været her før du prøver at snyde");
+                        Console.WriteLine(" du har været her før du prøver at snyde");
                     }
                     if (tenker2 == false)
                     {
 
-                        Console.WriteLine("du har været her før du prøver at snyde");
+                        Console.WriteLine(" du har været her før du prøver at snyde");
                     }
                     if (dawdwadw == false)
                     {
 
-                        Console.WriteLine("du har været her før du prøver at snyde");
+                        Console.WriteLine(" du har været her før du prøver at snyde");
                     }
                     if (dddda == false)
                     {
 
-                        Console.WriteLine("du har været her før du prøver at snyde");
+                        Console.WriteLine(" du har været her før du prøver at snyde");
                     }
 
 
@@ -224,9 +224,9 @@ namespace Basis_Programmering__første_semester
                     {
                         if (selectorSvorhedsGrad == 100)
                         {
-                            Console.WriteLine("Hvor mange tidszoner er der I Rusland?");
+                            Console.WriteLine(" Hvor mange tidszoner er der I Rusland?");
                             Console.WriteLine("");
-                            Console.WriteLine("Skriv dit svar her");
+                            Console.WriteLine(" Skriv dit svar her");
                             Console.WriteLine("");
                             string rusLand;
 
@@ -237,7 +237,7 @@ namespace Basis_Programmering__første_semester
                             if (rusLand == "11")
                             {
 
-                                Console.WriteLine("Tillykke du har vundet 100 point");
+                                Console.WriteLine(" Tillykke du har vundet 100 point");
                                 
                                 tenker = false;
 
@@ -251,13 +251,13 @@ namespace Basis_Programmering__første_semester
                                 }
 
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
                             {
                                 Console.WriteLine();
-                                Console.WriteLine("Svaret er ikke korrekt");
+                                Console.WriteLine(" Svaret er ikke korrekt");
                                 Console.WriteLine();
                             }
                         }
@@ -292,7 +292,7 @@ namespace Basis_Programmering__første_semester
                                     } while (tenkerd);
                                 }
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
@@ -372,7 +372,7 @@ namespace Basis_Programmering__første_semester
                                     } while (dawdwadw);
                                 }
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
@@ -432,21 +432,21 @@ namespace Basis_Programmering__første_semester
                 if (selector == "Geografi")
                 {
                     int selectorSvorhedsGrad;
-                    Console.WriteLine("Skriv Hvilken sværhedsgrad");
+                    Console.WriteLine(" Skriv Hvilken sværhedsgrad");
                     selectorSvorhedsGrad = int.Parse((Console.ReadLine()));
 
                     if (tenker == false)
                     {
-                        Console.WriteLine("du har været her før du prøver at snyde");
+                        Console.WriteLine(" du har været her før du prøver at snyde");
                     }
 
                     if (dawdadaw == true)
                     {
                         if (selectorSvorhedsGrad == 100)
                         {
-                            Console.WriteLine("Hvilket land i verden har flest øer?");
+                            Console.WriteLine(" Hvilket land i verden har flest øer?");
                             Console.WriteLine("");
-                            Console.WriteLine("Skriv dit svar her");
+                            Console.WriteLine(" Skriv dit svar her");
                             string verden;
                             verden = (Console.ReadLine());
 
@@ -455,7 +455,7 @@ namespace Basis_Programmering__første_semester
                             if (verden == "220000" || verden == "220.000")
                             {
 
-                                Console.WriteLine("Tillykke du har vundet 100 point");
+                                Console.WriteLine(" Tillykke du har vundet 100 point");
                                 dawdadaw = false;
 
                                 if (dawdadaw == false)
@@ -472,7 +472,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine("Svaret er ikke korrekt");
+                                Console.WriteLine(" Svaret er ikke korrekt");
 
                             }
                         }
@@ -548,7 +548,7 @@ namespace Basis_Programmering__første_semester
                                     } while (hovedstad);
                                 }
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
@@ -588,7 +588,7 @@ namespace Basis_Programmering__første_semester
                                     } while (jorden);
                                 }
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
@@ -629,7 +629,7 @@ namespace Basis_Programmering__første_semester
                                     } while (solen);
                                 }
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
@@ -646,11 +646,11 @@ namespace Basis_Programmering__første_semester
                 }
 
                 Console.WriteLine("");
-                Console.WriteLine("hvis du trykker enter to gange så stopper den spillet og viser din fulde score");
+                Console.WriteLine(" hvis du trykker enter to gange så stopper den spillet og viser din fulde score");
                 Console.WriteLine("");
             } while (restaet);
 
-            Console.WriteLine("Så din total score er: " + score);
+            Console.WriteLine(" Så din total score er: " + score);
             return selector;
         }
 
