@@ -53,16 +53,33 @@ namespace Basis_Programmering__første_semester
 
         }
 
+        static void Velkommen()
+        {
+            string[] myArray = new string[] { " Velkommen til Jeopardy ", " Quizmasteren placerer spillepladen med jetonerne foran sig og opstiller 6 svar/spørgsmålskort i kortholderen.      ", " Quizmasteren placerer spillepladen med jetonerne foran sig og opstiller 6 svar/spørgsmålskort i kortholderen.      ", " og kategorien vender ud mod deltagerne.       ", " Deltagerne i spillet må naturligvis ikke kunne se spørgsmål/svar-siden af kortene.       ", " Klik E for at starte " };
+            string arrayStrig = myArray[0];
+            string kategori = myArray[1];
+            string arrayStri = myArray[2];
+            string kategor = myArray[3];
+            string d = myArray[4];
+            string S = myArray[5];
 
+            Console.WriteLine();
+            Console.WriteLine(arrayStrig);
+            Console.WriteLine("");
+
+            Console.WriteLine(kategori);
+            Console.WriteLine(arrayStri);
+            Console.WriteLine(kategor);
+            Console.WriteLine(d);
+            Console.WriteLine(S);
+            Console.WriteLine();
+        }
 
 
         static void Start()
         {
-            Console.WriteLine();
-            Console.WriteLine(" Velkommen til Jeopardy ");
-            Console.WriteLine("");
 
-            Console.WriteLine(" E for at start ");
+            Velkommen();
             while (Console.ReadKey().Key != ConsoleKey.E)
             {
             }
@@ -333,7 +350,7 @@ namespace Basis_Programmering__første_semester
                                     } while (tenker2);
                                 }
                                 Console.WriteLine();
-                                Console.WriteLine("score: " + score);
+                                Console.WriteLine(" score: " + score);
                                 Console.WriteLine();
                             }
                             else
