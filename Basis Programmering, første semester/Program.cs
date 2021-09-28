@@ -619,7 +619,7 @@ namespace Basis_Programmering__første_semester
 
                                 Console.WriteLine(" Tillykke du har vundet 900 point");
                                 solen = false;
-                                
+
                                 if (solen == false)
                                 {
                                     do
@@ -645,7 +645,9 @@ namespace Basis_Programmering__første_semester
                     }
                 }
 
-
+                Console.WriteLine("");
+                Console.WriteLine("hvis du trykker enter to gange så stopper den spillet og viser din fulde score");
+                Console.WriteLine("");
             } while (restaet);
 
             Console.WriteLine("Så din total score er: " + score);
