@@ -227,6 +227,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine("Hvor mange tidszoner er der I Rusland?");
                             Console.WriteLine("");
                             Console.WriteLine("Skriv dit svar her");
+                            Console.WriteLine("");
                             string rusLand;
 
                             rusLand = (Console.ReadLine());
@@ -237,6 +238,7 @@ namespace Basis_Programmering__første_semester
                             {
 
                                 Console.WriteLine("Tillykke du har vundet 100 point");
+                                
                                 tenker = false;
 
                                 if (tenker == false)
@@ -247,13 +249,16 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (tenker);
                                 }
-                                
+
+                                Console.WriteLine();
                                 Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
+                                Console.WriteLine();
                                 Console.WriteLine("Svaret er ikke korrekt");
-
+                                Console.WriteLine();
                             }
                         }
                     }
@@ -266,6 +271,7 @@ namespace Basis_Programmering__første_semester
                             Console.WriteLine(" Hvad er Japans nationalblomst? ");
                             Console.WriteLine("");
                             Console.WriteLine(" Skriv dit svar her ");
+
                             string nationalBlomst;
 
                             nationalBlomst = (Console.ReadLine());
@@ -285,13 +291,15 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (tenkerd);
                                 }
+                                Console.WriteLine();
                                 Console.WriteLine("score: " + score);
-
+                                Console.WriteLine();
                             }
                             else
                             {
+                                Console.WriteLine();
                                 Console.WriteLine(" Svaret er ikke korrekt");
-
+                                Console.WriteLine();
                             }
                         }
                     }
@@ -324,7 +332,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (tenker2);
                                 }
-
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -361,6 +371,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (dawdwadw);
                                 }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -398,7 +411,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (dddda);
                                 }
-
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -451,6 +466,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (dawdadaw);
                                 }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -489,6 +507,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (dwadaw);
                                 }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -526,6 +547,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (hovedstad);
                                 }
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -563,7 +587,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (jorden);
                                 }
-
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -602,7 +628,9 @@ namespace Basis_Programmering__første_semester
                                         ++score;
                                     } while (solen);
                                 }
-
+                                Console.WriteLine();
+                                Console.WriteLine("score: " + score);
+                                Console.WriteLine();
                             }
                             else
                             {
