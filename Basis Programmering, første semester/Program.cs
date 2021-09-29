@@ -10,7 +10,7 @@ namespace Basis_Programmering__første_semester
 
         static void Main(string[] args)
         {
-
+Velkommen();
 
             Start();
 
@@ -83,7 +83,7 @@ namespace Basis_Programmering__første_semester
         static void Start()
         {
 
-            Velkommen();
+            
             
             while (Console.ReadKey().Key != ConsoleKey.E)
             {
@@ -147,13 +147,21 @@ namespace Basis_Programmering__første_semester
 
 
 
-            string[] myArray = new string[] { " Skriv kategorienavn", " Skriv din kategori igen", " Du har været her før du prøver at snyde", " Skriv Hvilken sværhedsgrad", " Hvor mange tidszoner er der I Rusland?", " Skriv dit svar her" };
+            string[] myArray = new string[] { " Skriv kategorienavn", " Skriv din kategori igen", " Du har været her før du prøver at snyde", " Skriv Hvilken sværhedsgrad", " Hvor mange tidszoner er der I Rusland?", " Skriv dit svar her", " Tillykke du har vundet 700 point"," Tillykke du har vundet 100 point", " Tillykke du har vundet 300 point", " Tillykke du har vundet 500 point", " Tillykke du har vundet 900 point" , " Svaret er ikke korrekt" };
             string arrayStrig = myArray[0];
             string kategori = myArray[1];
             string snyde = myArray[2];
             string Hvilken = myArray[3];
                 string tidsZoner = myArray[4];
             string svar = myArray[5];
+            string ikke = myArray[11];
+
+            //den udskriver Hvor mange point
+            string point1 = myArray[7];
+            string point3 = myArray[8];
+            string point5 = myArray[9];
+            string point7 = myArray[6];
+            string point9 = myArray[10];
 
             //pointsystemet
             int[] myArrayd = new int[] { 99, 299, 499, 699, 899 };
@@ -199,8 +207,11 @@ namespace Basis_Programmering__første_semester
             bool dddddddd = true;
 
             //Historie
-
-
+            bool London = true;
+            bool internettet = true;
+            bool opfandt = true;
+            bool skete = true;
+            bool udgivet = true;
             //Musik
             bool liverpool = true;
             bool mange = true;
@@ -280,7 +291,7 @@ namespace Basis_Programmering__første_semester
                             if (rusLand == "11")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                Console.WriteLine(point1);
 
                                 tenker = false;
 
@@ -300,7 +311,7 @@ namespace Basis_Programmering__første_semester
                             else
                             {
                                 Console.WriteLine();
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
                                 Console.WriteLine();
                             }
                         }
@@ -324,7 +335,7 @@ namespace Basis_Programmering__første_semester
                             if (nationalBlomst == "Kirsebærblomst")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                Console.WriteLine(point3);
                                 tenkerd = false;
                                 if (tenkerd == false)
                                 {
@@ -341,7 +352,7 @@ namespace Basis_Programmering__første_semester
                             else
                             {
                                 Console.WriteLine();
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
                                 Console.WriteLine();
                             }
                         }
@@ -364,7 +375,7 @@ namespace Basis_Programmering__første_semester
                             if (amerikanske == "13")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                Console.WriteLine(point5);
                                 tenker2 = false;
 
                                 if (tenker2 == false)
@@ -381,7 +392,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -403,7 +414,7 @@ namespace Basis_Programmering__første_semester
                             if (nationalDyr == "Rød Kæmpekænguru")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                Console.WriteLine(point7);
                                 dawdwadw = false;
 
                                 if (dawdwadw == false)
@@ -420,7 +431,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -444,7 +455,7 @@ namespace Basis_Programmering__første_semester
                             if (S == "365")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                Console.WriteLine(point9);
                                 dddda = false;
                                 if (dddda == false)
                                 {
@@ -460,7 +471,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -500,7 +511,7 @@ namespace Basis_Programmering__første_semester
                             if (verden == "Los Angeles" || verden == "los angeles")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                Console.WriteLine(point1);
                                 angeles = false;
 
                                 if (angeles == false)
@@ -517,7 +528,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -540,7 +551,7 @@ namespace Basis_Programmering__første_semester
                             if (vatikanstaten == "Liverpool" || vatikanstaten == "liverpool")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                Console.WriteLine(point3);
                                 liverpool = false;
 
 
@@ -558,7 +569,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -581,7 +592,7 @@ namespace Basis_Programmering__første_semester
                             if (amerikanske == "Ed Sheeran" || amerikanske == "The Shape of You")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                Console.WriteLine(point5);
                                 streamede = false;
 
                                 if (streamede == false)
@@ -598,7 +609,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -622,7 +633,7 @@ namespace Basis_Programmering__første_semester
                             if (skriget == "When We Fall Asleep, Where Do We Go? Billie Eilish")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                Console.WriteLine(point7);
                                 album = false;
                                 if (album == false)
                                 {
@@ -638,7 +649,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -662,7 +673,7 @@ namespace Basis_Programmering__første_semester
                             if (michelangelo == "88")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                Console.WriteLine(point9);
                                 mange = false;
 
                                 if (mange == false)
@@ -679,7 +690,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -699,8 +710,8 @@ namespace Basis_Programmering__første_semester
                     {
                         Console.WriteLine(" du har været her før du prøver at snyde");
                     }
-
-                    if (dwadwadwadwawd == true)
+                    
+                    if (London == true)
                     {
                         if (selectorSvorhedsGrad == 100)
                         {
@@ -715,16 +726,16 @@ namespace Basis_Programmering__første_semester
                             if (verden == "1863")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 100 point");
-                                dwadwadwadwawd = false;
+                                Console.WriteLine(point1);
+                                London = false;
 
-                                if (dwadwadwadwawd == false)
+                                if (London == false)
                                 {
                                     do
                                     {
                                         score += pointSystem1;
                                         ++score;
-                                    } while (dwadwadwadwawd);
+                                    } while (London);
                                 }
                                 Console.WriteLine();
                                 Console.WriteLine("score: " + score);
@@ -732,13 +743,13 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
                     }
-
-                    if (dadwawdawddw == true)
+                    
+                    if (internettet == true)
                     {
                         if (selectorSvorhedsGrad == 300)
                         {
@@ -755,17 +766,17 @@ namespace Basis_Programmering__første_semester
                             if (vatikanstaten == "tim Berners-Lee" || vatikanstaten == "1990")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 300 point");
-                                dadwawdawddw = false;
+                                Console.WriteLine(point3);
+                                internettet = false;
 
 
-                                if (dadwawdawddw == false)
+                                if (internettet == false)
                                 {
                                     do
                                     {
                                         score += pointSystem3;
                                         ++score;
-                                    } while (dadwawdawddw);
+                                    } while (internettet);
                                 }
                                 Console.WriteLine();
                                 Console.WriteLine("score: " + score);
@@ -773,13 +784,13 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
                     }
-
-                    if (dwadwadadwawdwa == true)
+                   
+                    if (opfandt == true)
                     {
                         if (selectorSvorhedsGrad == 500)
                         {
@@ -796,16 +807,16 @@ namespace Basis_Programmering__første_semester
                             if (amerikanske == "Coco Chanel" || amerikanske == "1920")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 500 point");
-                                dwadwadadwawdwa = false;
+                                Console.WriteLine(point5);
+                                opfandt = false;
 
-                                if (dwadwadadwawdwa == false)
+                                if (opfandt == false)
                                 {
                                     do
                                     {
                                         score += pointSystem5;
                                         ++score;
-                                    } while (dwadwadadwawdwa);
+                                    } while (opfandt);
                                 }
                                 Console.WriteLine();
                                 Console.WriteLine(" score: " + score);
@@ -813,14 +824,14 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
                     }
 
-
-                    if (dddddddd == true)
+                    
+                    if (skete == true)
                     {
                         if (selectorSvorhedsGrad == 700)
                         {
@@ -837,15 +848,15 @@ namespace Basis_Programmering__første_semester
                             if (skriget == "Apollo 11 landede på månen")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 700 point");
-                                dddddddd = false;
-                                if (dddddddd == false)
+                                Console.WriteLine(point7);
+                                skete = false;
+                                if (skete == false)
                                 {
                                     do
                                     {
                                         score += pointSystem7;
                                         ++score;
-                                    } while (dddddddd);
+                                    } while (skete);
                                 }
                                 Console.WriteLine();
                                 Console.WriteLine(" score: " + score);
@@ -853,13 +864,13 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
                     }
 
-
+                    
                     else if (ddddasddadsa == true)
                     {
                         if (selectorSvorhedsGrad == 900)
@@ -877,16 +888,16 @@ namespace Basis_Programmering__første_semester
                             if (michelangelo == "1892")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 900 point");
-                                ddddasddadsa = false;
+                                Console.WriteLine(point9);
+                                udgivet = false;
 
-                                if (ddddasddadsa == false)
+                                if (udgivet == false)
                                 {
                                     do
                                     {
                                         score += pointSystem9;
                                         ++score;
-                                    } while (ddddasddadsa);
+                                    } while (udgivet);
                                 }
                                 Console.WriteLine();
                                 Console.WriteLine(" score: " + score);
@@ -894,7 +905,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -933,7 +944,7 @@ namespace Basis_Programmering__første_semester
                             if (verden == "Gotham" || verden == "gotham")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                Console.WriteLine(point1);
                                 dwadwadwadwawd = false;
 
                                 if (dwadwadwadwawd == false)
@@ -950,7 +961,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -973,7 +984,7 @@ namespace Basis_Programmering__første_semester
                             if (vatikanstaten == "Harry Potter" || vatikanstaten == "J. K. Rowling")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                Console.WriteLine(point3);
                                 dadwawdawddw = false;
 
 
@@ -991,7 +1002,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1014,7 +1025,7 @@ namespace Basis_Programmering__første_semester
                             if (amerikanske == "Banksy" || amerikanske == "banksy")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                Console.WriteLine(point5);
                                 dwadwadadwawdwa = false;
 
                                 if (dwadwadadwawdwa == false)
@@ -1031,7 +1042,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1055,7 +1066,7 @@ namespace Basis_Programmering__første_semester
                             if (skriget == "Skriget" || skriget == "Skriget")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                Console.WriteLine(point7);
                                 dddddddd = false;
                                 if (dddddddd == false)
                                 {
@@ -1071,7 +1082,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1095,7 +1106,7 @@ namespace Basis_Programmering__første_semester
                             if (michelangelo == "Michelangelo" || michelangelo == "michelangelo")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                Console.WriteLine(point9);
                                 ddddasddadsa = false;
 
                                 if (ddddasddadsa == false)
@@ -1112,7 +1123,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1149,7 +1160,7 @@ namespace Basis_Programmering__første_semester
                             if (verden == "220000" || verden == "220.000")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 100 point");
+                                Console.WriteLine(point1);
                                 dawdadaw = false;
 
                                 if (dawdadaw == false)
@@ -1166,7 +1177,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1189,7 +1200,7 @@ namespace Basis_Programmering__første_semester
                             if (vatikanstaten == "Vatikanstaten" || vatikanstaten == "vatikanstaten")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 300 point");
+                                Console.WriteLine(point3);
                                 dwadaw = false;
 
 
@@ -1207,7 +1218,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1230,7 +1241,7 @@ namespace Basis_Programmering__første_semester
                             if (amerikanske == "Ottowa" || amerikanske == "ottowa")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 500 point");
+                                Console.WriteLine(point5);
                                 hovedstad = false;
 
                                 if (hovedstad == false)
@@ -1247,7 +1258,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1271,7 +1282,7 @@ namespace Basis_Programmering__første_semester
                             if (nationalDyr == "11.034" || nationalDyr == "11034" || nationalDyr == "11000")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 700 point");
+                                Console.WriteLine(point7);
                                 jorden = false;
                                 if (jorden == false)
                                 {
@@ -1287,7 +1298,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1311,7 +1322,7 @@ namespace Basis_Programmering__første_semester
                             if (rusLand == "365")
                             {
 
-                                Console.WriteLine(" Tillykke du har vundet 900 point");
+                                Console.WriteLine(point9);
                                 solen = false;
 
                                 if (solen == false)
@@ -1328,7 +1339,7 @@ namespace Basis_Programmering__første_semester
                             }
                             else
                             {
-                                Console.WriteLine(" Svaret er ikke korrekt");
+                                Console.WriteLine(ikke);
 
                             }
                         }
@@ -1339,7 +1350,7 @@ namespace Basis_Programmering__første_semester
                 }
 
 
-             
+
 
                 restaet = true;
             } while (restaet);
